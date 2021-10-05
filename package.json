@@ -1,0 +1,22 @@
+{
+  "name": "twilio-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "twilio": "^3.68.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "scripts": {
+    "build": "babel *.js -d dist",
+    "start": "yarn build && node dist/app.js",
+    "dev": "babel-node app.js"
+  }
+}
